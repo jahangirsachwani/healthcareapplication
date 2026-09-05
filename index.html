@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Assist</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="disclaimer-banner" id="disclaimer-banner">
+  <span>&#9888;&#65039; This is a demo application. If this is a real emergency, call your local emergency number immediately.</span>
+  <button id="dismiss-banner" aria-label="Dismiss banner">&times;</button>
+</div>
+
+<header class="app-header">
+  <a href="#/" class="app-title">&#128657; Emergency Assist</a>
+  <nav class="app-nav">
+    <a href="#/">Home</a>
+    <a href="#/hospitals">Hospitals</a>
+    <a href="#/firstaid">First Aid</a>
+    <a href="#/triage">Symptoms</a>
+    <a href="#/settings">Settings</a>
+  </nav>
+  <a href="#/sos" class="sos-quick-btn">SOS</a>
+</header>
+
+<main id="view-root"></main>
+
+<footer class="app-footer">
+  <p>Demo project &mdash; no real backend. All data stays in your browser (localStorage). Map data &copy; OpenStreetMap contributors.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/config.js" defer></script>
+<script src="js/utils.js" defer></script>
+<script src="js/state.js" defer></script>
+<script src="data/hospitals.js" defer></script>
+<script src="data/firstaid.js" defer></script>
+<script src="data/triageRules.js" defer></script>
+<script src="js/views/home.js" defer></script>
+<script src="js/views/sos.js" defer></script>
+<script src="js/views/hospitals.js" defer></script>
+<script src="js/views/firstaid.js" defer></script>
+<script src="js/views/triage.js" defer></script>
+<script src="js/views/settings.js" defer></script>
+<script src="js/router.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
